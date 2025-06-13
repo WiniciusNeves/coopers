@@ -1,0 +1,93 @@
+/*
+Theme Name: Coopers
+Author: Seu Nome
+Description: Landing page moderna para produtividade
+Version: 1.0
+*/
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    background-color: #f7f7f7; /* Fundo cinza claro para o body */
+    overflow-x: hidden; /* Evita rolagem horizontal */
+    position: relative; /* Necessário para posicionamento relativo de elementos internos */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* IMPORTANTE: REMOVIDOS body::before e body::after. Eles estavam causando o fundo branco extra e duplicação de fundos. */
+
+/* Estilos personalizados para os ícones de check/cross */
+.icon-check::before {
+    content: '✓'; /* Checkmark */
+    color: #50C877; /* Verde */
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.icon-cross::before {
+    content: '✕'; /* Multiplicação X */
+    color: #EF4444; /* Vermelho */
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+/* Animação da seta */
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+}
+
+/* Ajustes para telas menores (celular) */
+@media (max-width: 768px) {
+    .hero-image {
+        width: 90vw !important;
+    }
+    /* Ajustes específicos para o triângulo em mobile, se necessário após as mudanças gerais */
+    .hero-triangle {
+        width: 100% !important;
+        height: 25rem;
+        right: -20% !important;
+        top: -50px !important;
+        transform: rotate(-10deg) !important;
+    }
+
+    .hero-text {
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+        text-align: center;
+    }
+
+    .image-col {
+        justify-content: center !important;
+    }
+
+    .hero-section-container {
+        flex-direction: column;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        gap: 2rem;
+    }
+
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .hero-image {
+        max-width: 400px;
+    }
+}
