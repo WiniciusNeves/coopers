@@ -1,0 +1,1034 @@
+{
+    "key": "group_666b6e4e9a3b2",
+    "title": "Coopers - Página Inicial",
+    "fields": [
+        {
+            "key": "field_666b6e792a6c1",
+            "label": "Seção Hero",
+            "name": "hero_section",
+            "type": "group",
+            "instructions": "Campos para a seção principal (Hero) da página.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_666b6e922a6c2",
+                    "label": "Título Principal",
+                    "name": "hero_main_title",
+                    "type": "text",
+                    "instructions": "Ex: Organize",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Organize",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_666b6ead2a6c3",
+                    "label": "Subtítulo do Título Principal",
+                    "name": "hero_subtitle",
+                    "type": "text",
+                    "instructions": "Ex: your daily jobs",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "your daily jobs",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_666b6ebc2a6c4",
+                    "label": "Descrição Hero",
+                    "name": "hero_description",
+                    "type": "textarea",
+                    "instructions": "Texto abaixo do título.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "The only way to get things done.",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 2,
+                    "new_lines": "",
+                    "acfe_textarea_code": 0
+                },
+                {
+                    "key": "field_666b6ecf2a6c5",
+                    "label": "Texto do Botão Hero",
+                    "name": "hero_button_text",
+                    "type": "text",
+                    "instructions": "Texto do botão 'Meet the To-do list'.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Meet the To-do list",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_666b6edc2a6c6",
+                    "label": "Imagem Hero (Foto)",
+                    "name": "hero_image",
+                    "type": "image",
+                    "instructions": "Imagem principal da seção hero.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "uploader": "wp",
+                    "acfe_thumbnail": 0,
+                    "return_format": "url",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_666b6eef2a6c7",
+                    "label": "Imagem de Fundo (Triângulo)",
+                    "name": "hero_bg_triangle",
+                    "type": "image",
+                    "instructions": "Imagem do triângulo de fundo na seção hero.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "uploader": "wp",
+                    "acfe_thumbnail": 0,
+                    "return_format": "url",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_666b6f042a6c8",
+                    "label": "Ícone de Scroll",
+                    "name": "hero_scroll_icon",
+                    "type": "image",
+                    "instructions": "Ícone da seta de rolagem.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "uploader": "wp",
+                    "acfe_thumbnail": 0,
+                    "return_format": "url",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                }
+            ]
+        },
+        {
+            "key": "field_666b6f3c2a6c9",
+            "label": "Seção Lista de Tarefas (Intro Planos)",
+            "name": "todo_list_intro_section",
+            "type": "group",
+            "instructions": "Conteúdo da seção de introdução aos planos.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_666b6f522a6ca",
+                    "label": "Título da Seção",
+                    "name": "todo_list_title",
+                    "type": "text",
+                    "instructions": "Título principal da seção 'To-do List'.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "To-do List",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_666b6f652a6cb",
+                    "label": "Descrição da Seção",
+                    "name": "todo_list_description",
+                    "type": "textarea",
+                    "instructions": "Descrição abaixo do título.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Choose the right plan for you and get in touch through our contact form. We are here to help.",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 3,
+                    "new_lines": "br",
+                    "acfe_textarea_code": 0
+                }
+            ]
+        },
+        {
+            "key": "field_666b6f842a6cc",
+            "label": "Seção de Planos",
+            "name": "plans_section",
+            "type": "group",
+            "instructions": "Campos para os cartões de planos (Básico e Pro).",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_666b6f9a2a6cd",
+                    "label": "Lateral Esquerda (Triângulo)",
+                    "name": "plans_left_triangle",
+                    "type": "image",
+                    "instructions": "Imagem do triângulo no canto inferior esquerdo da seção de planos.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "uploader": "wp",
+                    "acfe_thumbnail": 0,
+                    "return_format": "url",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_666b6fae2a6ce",
+                    "label": "Plano Básico",
+                    "name": "basic_plan",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_666b6fc42a6cf",
+                            "label": "Preço Básico",
+                            "name": "price",
+                            "type": "text",
+                            "instructions": "Ex: R$ 20 / mês",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "R$ 20 / mês",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_666b6fd02a6d0",
+                            "label": "Nome do Plano Básico",
+                            "name": "plan_name",
+                            "type": "text",
+                            "instructions": "Ex: Basic Plan",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Basic Plan",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_666b6fdc2a6d1",
+                            "label": "Descrição do Plano Básico",
+                            "name": "plan_description",
+                            "type": "text",
+                            "instructions": "Ex: unlimited tasks",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "unlimited tasks",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_666b6fe82a6d2",
+                            "label": "Funcionalidades do Plano Básico",
+                            "name": "plan_features",
+                            "type": "repeater",
+                            "instructions": "Liste as funcionalidades do plano. Use 'check' ou 'cross' para o ícone.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "table",
+                            "pagination": 0,
+                            "min": 0,
+                            "max": 0,
+                            "rows_per_page": 20,
+                            "acfe_flexible_category": "acf-field-group",
+                            "collapsed": "",
+                            "min_rows": "",
+                            "max_rows": "",
+                            "button_label": "Adicionar Funcionalidade",
+                            "sub_fields": [
+                                {
+                                    "key": "field_666b70172a6d3",
+                                    "label": "Ícone (check/cross)",
+                                    "name": "icon_type",
+                                    "type": "select",
+                                    "instructions": "Selecione o tipo de ícone para esta funcionalidade.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "30",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "icon-check": "Check (✔️)",
+                                        "icon-cross": "Cross (❌)"
+                                    },
+                                    "default_value": "icon-check",
+                                    "return_format": "value",
+                                    "multiple": 0,
+                                    "allow_null": 0,
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "allow_custom": 0,
+                                    "search_placeholder": ""
+                                },
+                                {
+                                    "key": "field_666b70422a6d4",
+                                    "label": "Texto da Funcionalidade",
+                                    "name": "feature_text",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "70",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_666b70562a6d5",
+                            "label": "Texto do Botão do Plano Básico",
+                            "name": "button_text",
+                            "type": "text",
+                            "instructions": "Ex: get in touch",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "get in touch",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ]
+                },
+                {
+                    "key": "field_666b706c2a6d6",
+                    "label": "Plano Pro",
+                    "name": "pro_plan",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_666b707c2a6d7",
+                            "label": "Preço Pro",
+                            "name": "price",
+                            "type": "text",
+                            "instructions": "Ex: R$ 30 / mês",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "R$ 30 / mês",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_666b708b2a6d8",
+                            "label": "Nome do Plano Pro",
+                            "name": "plan_name",
+                            "type": "text",
+                            "instructions": "Ex: Pro Plan",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Pro Plan",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_666b70952a6d9",
+                            "label": "Descrição do Plano Pro",
+                            "name": "plan_description",
+                            "type": "text",
+                            "instructions": "Ex: unlimited everything",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "unlimited everything",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_666b70a12a6da",
+                            "label": "Funcionalidades do Plano Pro",
+                            "name": "plan_features",
+                            "type": "repeater",
+                            "instructions": "Liste as funcionalidades do plano. Use 'check' ou 'cross' para o ícone.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "table",
+                            "pagination": 0,
+                            "min": 0,
+                            "max": 0,
+                            "rows_per_page": 20,
+                            "acfe_flexible_category": "acf-field-group",
+                            "collapsed": "",
+                            "min_rows": "",
+                            "max_rows": "",
+                            "button_label": "Adicionar Funcionalidade",
+                            "sub_fields": [
+                                {
+                                    "key": "field_666b70aa2a6db",
+                                    "label": "Ícone (check/cross)",
+                                    "name": "icon_type",
+                                    "type": "select",
+                                    "instructions": "Selecione o tipo de ícone para esta funcionalidade.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "30",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "icon-check": "Check (✔️)",
+                                        "icon-cross": "Cross (❌)"
+                                    },
+                                    "default_value": "icon-check",
+                                    "return_format": "value",
+                                    "multiple": 0,
+                                    "allow_null": 0,
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "allow_custom": 0,
+                                    "search_placeholder": ""
+                                },
+                                {
+                                    "key": "field_666b70be2a6dc",
+                                    "label": "Texto da Funcionalidade",
+                                    "name": "feature_text",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "70",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_666b70cc2a6dd",
+                            "label": "Texto do Botão do Plano Pro",
+                            "name": "button_text",
+                            "type": "text",
+                            "instructions": "Ex: get in touch",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "get in touch",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_666b70f02a6de",
+            "label": "Seção Good Things",
+            "name": "good_things_section",
+            "type": "group",
+            "instructions": "Campos para a seção 'Good Things' com os cartões.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_666b71002a6df",
+                    "label": "Título da Seção",
+                    "name": "section_title",
+                    "type": "text",
+                    "instructions": "Ex: Good Things",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Good Things",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_666b71102a6e0",
+                    "label": "Cards de Boas Coisas",
+                    "name": "good_things_cards",
+                    "type": "repeater",
+                    "instructions": "Adicione e gerencie os cartões da seção 'Good Things'.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "pagination": 0,
+                    "min": 0,
+                    "max": 0,
+                    "rows_per_page": 20,
+                    "acfe_flexible_category": "acf-field-group",
+                    "collapsed": "",
+                    "min_rows": "",
+                    "max_rows": "",
+                    "button_label": "Adicionar Card",
+                    "sub_fields": [
+                        {
+                            "key": "field_666b712c2a6e1",
+                            "label": "Imagem do Card",
+                            "name": "card_image",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "uploader": "wp",
+                            "acfe_thumbnail": 0,
+                            "return_format": "url",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_666b71402a6e2",
+                            "label": "Texto do Card",
+                            "name": "card_text",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": 3,
+                            "new_lines": "br",
+                            "acfe_textarea_code": 0
+                        },
+                        {
+                            "key": "field_666b71502a6e3",
+                            "label": "Texto do Botão 'Read more'",
+                            "name": "read_more_text",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "read more",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_666b71602a6e4",
+                            "label": "URL do Botão 'Read more'",
+                            "name": "read_more_url",
+                            "type": "url",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "#",
+                            "placeholder": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_666b717b2a6e5",
+            "label": "Seção de Contato",
+            "name": "contact_section",
+            "type": "group",
+            "instructions": "Campos para o formulário de contato.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_666b71942a6e6",
+                    "label": "Imagem da Pessoa de Contato",
+                    "name": "contact_person_image",
+                    "type": "image",
+                    "instructions": "Imagem da pessoa no topo do formulário de contato.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "uploader": "wp",
+                    "acfe_thumbnail": 0,
+                    "return_format": "url",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_666b71ac2a6e7",
+                    "label": "Título da Seção de Contato",
+                    "name": "contact_title",
+                    "type": "text",
+                    "instructions": "Ex: GET IN TOUCH",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "GET IN TOUCH",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_666b71bd2a6e8",
+                    "label": "Placeholder do Nome",
+                    "name": "placeholder_name",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "type your name here...",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_666b71ca2a6e9",
+                    "label": "Placeholder do Email",
+                    "name": "placeholder_email",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "example@example.com",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_666b71d62a6ea",
+                    "label": "Placeholder do Telefone",
+                    "name": "placeholder_phone",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "( ) _ _ _ - _ _ _ _",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_666b71e12a6eb",
+                    "label": "Placeholder da Mensagem",
+                    "name": "placeholder_message",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Type what you want to say to us",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_666b71f32a6ec",
+                    "label": "Texto do Botão de Envio",
+                    "name": "send_button_text",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "SEND NOW",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_666b72042a6ed",
+            "label": "Seção do Rodapé",
+            "name": "footer_section",
+            "type": "group",
+            "instructions": "Campos para o conteúdo do rodapé.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_666b721e2a6ee",
+                    "label": "Texto de Ajuda",
+                    "name": "help_text",
+                    "type": "text",
+                    "instructions": "Ex: Need help?",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Need help?",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_666b722d2a6ef",
+                    "label": "Email de Contato",
+                    "name": "contact_email",
+                    "type": "email",
+                    "instructions": "Ex: coopers@coopers.pro",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "coopers@coopers.pro",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_666b72442a6f0",
+                    "label": "Texto de Copyright",
+                    "name": "copyright_text",
+                    "type": "text",
+                    "instructions": "Ex: © 2021 Coopers. All rights reserved.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "© 2021 Coopers. All rights reserved.",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_666b725b2a6f1",
+                    "label": "Imagem de Fundo do Rodapé",
+                    "name": "footer_background_image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "uploader": "wp",
+                    "acfe_thumbnail": 0,
+                    "return_format": "url",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "front-page.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Campos para a personalização da página inicial do tema Coopers.",
+    "acfe_display_title": "",
+    "acfe_suppress_errors": 0,
+    "acfe_lock": "",
+    "acfe_permissions": "",
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "acfe_categories": [
+        "Coopers Theme"
+    ],
+    "modified": 1718320436
+}
