@@ -1,70 +1,82 @@
-[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
+# Coopers Front Page - Tema WordPress Personalizado
 
-_s
-===
+Este projeto é um tema WordPress personalizado desenvolvido para a página inicial da Coopers. Ele apresenta um layout moderno, responsivo e com gerenciamento de conteúdo totalmente dinâmico via Advanced Custom Fields (ACF).
 
-Hi. I'm a starter theme called `_s`, or `underscores`, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+## 🚀 Visão Geral do Projeto
 
-My ultra-minimal CSS might make me look like theme tartare but that means less stuff to get in your way when you're designing your awesome theme. Here are some of the other more interesting things you'll find here:
+O tema **Coopers Front Page** foi criado do zero para atender às especificações de design e funcionalidade da empresa, transformando um layout estático em uma experiência dinâmica e totalmente gerenciável pelo painel do WordPress.
 
-* A modern workflow with a pre-made command-line interface to turn your project into a more pleasant experience.
-* A just right amount of lean, well-commented, modern, HTML5 templates.
-* A custom header implementation in `inc/custom-header.php`. Just add the code snippet found in the comments of `inc/custom-header.php` to your `header.php` template.
-* Custom template tags in `inc/template-tags.php` that keep your templates clean and neat and prevent code duplication.
-* Some small tweaks in `inc/template-functions.php` that can improve your theming experience.
-* A script at `js/navigation.js` that makes your menu a toggled dropdown on small screens (like your phone), ready for CSS artistry. It's enqueued in `functions.php`.
-* 2 sample layouts in `sass/layouts/` made using CSS Grid for a sidebar on either side of your content. Just uncomment the layout of your choice in `sass/style.scss`.
-Note: `.no-sidebar` styles are automatically loaded.
-* Smartly organized starter CSS in `style.css` that will help you to quickly get your design off the ground.
-* Full support for `WooCommerce plugin` integration with hooks in `inc/woocommerce.php`, styling override woocommerce.css with product gallery features (zoom, swipe, lightbox) enabled.
-* Licensed under GPLv2 or later. :) Use it to make something cool.
+### Principais Seções
 
-Installation
----------------
+- **Seção Hero (Principal):** Com título, subtítulo, descrição, botão de CTA e imagens (de fundo e ilustração) configuráveis.
+- **Seção de Introdução aos Planos:** Faixa preta com título e descrição dinâmicos.
+- **Seção de Planos:** Apresenta dois planos (Basic e Pro) com preços, nomes, descrições e listas de funcionalidades totalmente configuráveis.
+- **Seção "Good Things":** Área de cards com imagens, textos e links, que possui paginação dinâmica controlada via JavaScript.
+- **Seção de Contato:** Formulário com campos personalizados e imagem de perfil. Exibe mensagem de sucesso diretamente na página após o envio (sem redirecionamento) e limpa os campos via JavaScript.
+- **Rodapé:** Área com informações de contato e direitos autorais, também personalizável.
 
-### Requirements
+## ✨ Funcionalidades
 
-`_s` requires the following dependencies:
+- **Design Responsivo:** Layout adaptável para diferentes tamanhos de tela (desktop, tablet e mobile), com uso de Tailwind CSS.
+- **Conteúdo Dinâmico com ACF:** Todas as informações textuais, imagens e links são gerenciadas via campos personalizados no painel do WordPress.
+- **Gerenciamento de Planos Flexível:** Permite adicionar e editar detalhes como nome, preço, descrição e funcionalidades dos planos.
+- **Paginação de Cards com JavaScript:** A seção "Good Things" usa navegação por pontos para exibição dos cards, com adaptação ao tamanho da tela.
+- **Formulário de Contato com Feedback Imediato:** Interação via JavaScript que evita redirecionamentos, exibe feedback na própria página e limpa os campos após o envio (simulado, sem backend).
+- **Estrutura Padrão de Tema WordPress:** Utiliza a hierarquia e os arquivos recomendados pelo WordPress (`header.php`, `footer.php`, `front-page.php`, etc.).
 
-- [Node.js](https://nodejs.org/)
-- [Composer](https://getcomposer.org/)
+## 🛠️ Tecnologias Utilizadas
 
-### Quick Start
+- **WordPress**
+- **PHP**
+- **Advanced Custom Fields (ACF)**
+- **HTML5**
+- **Tailwind CSS**
+- **JavaScript (Vanilla JS)**
 
-Clone or download this repository, change its name to something else (like, say, `megatherium-is-awesome`), and then you'll need to do a six-step find and replace on the name in all the templates.
+## ⚙️ Instalação e Configuração
 
-1. Search for `'_s'` (inside single quotations) to capture the text domain and replace with: `'megatherium-is-awesome'`.
-2. Search for `_s_` to capture all the functions names and replace with: `megatherium_is_awesome_`.
-3. Search for `Text Domain: _s` in `style.css` and replace with: `Text Domain: megatherium-is-awesome`.
-4. Search for <code>&nbsp;_s</code> (with a space before it) to capture DocBlocks and replace with: <code>&nbsp;Megatherium_is_Awesome</code>.
-5. Search for `_s-` to capture prefixed handles and replace with: `megatherium-is-awesome-`.
-6. Search for `_S_` (in uppercase) to capture constants and replace with: `MEGATHERIUM_IS_AWESOME_`.
+1. **Instale o WordPress**  
+   Certifique-se de ter uma instalação funcional do WordPress (local ou em servidor remoto).
 
-Then, update the stylesheet header in `style.css`, the links in `footer.php` with your own information and rename `_s.pot` from `languages` folder to use the theme's slug. Next, update or delete this readme.
+   **Clone ou Baixe o Tema:**
+    * Clone este repositório para a pasta `wp-content/themes/` da sua instalação WordPress:
+        ```bash
+        git clone https://github.com/WiniciusNeves/coopers
+        ```
 
-### Setup
+3. **Adicione o Tema**
+   Copie os arquivos do tema para a pasta `wp-content/themes/coopers-front-page`.
 
-To start using all the tools that come with `_s`  you need to install the necessary Node.js and Composer dependencies :
+4. **Ative o Tema**
+   No painel do WordPress, vá até `Aparência > Temas`, localize "Coopers Front Page" e clique em **Ativar**.
 
-```sh
-$ composer install
-$ npm install
-```
+5. **Instale o Plugin ACF PRO**
+   Vá em `Plugins > Adicionar Novo`, procure por "Advanced Custom Fields PRO", instale e ative o plugin.
 
-### Available CLI commands
+6. **Importe os Campos Personalizados (ACF)**
+   Vá em `ACF > Ferramentas > Importar`. Clique em **Importar JSON**, cole o conteúdo do JSON e clique em **Importar Arquivos**:
 
-`_s` comes packed with CLI commands tailored for WordPress theme development :
+   📄 [Coopers - Página Inicial (JSON)](https://github.com/user-attachments/files/20734482/acf-export-2025-06-14.json)
 
-- `composer lint:wpcs` : checks all PHP files against [PHP Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/).
-- `composer lint:php` : checks all PHP files for syntax errors.
-- `composer make-pot` : generates a .pot file in the `languages/` directory.
-- `npm run compile:css` : compiles SASS files to css.
-- `npm run compile:rtl` : generates an RTL stylesheet.
-- `npm run watch` : watches all SASS files and recompiles them to css when they change.
-- `npm run lint:scss` : checks all SASS files against [CSS Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/css/).
-- `npm run lint:js` : checks all JavaScript files against [JavaScript Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/javascript/).
-- `npm run bundle` : generates a .zip archive for distribution, excluding development and system files.
+7. **Crie e Atribua a Página Inicial**
+   Vá em `Páginas > Adicionar Nova`, crie uma nova página (ex: "Página Inicial Coopers") e selecione o modelo **Coopers Front Page** nos atributos da página. Publique-a.
 
-Now you're ready to go! The next step is easy to say, but harder to do: make an awesome WordPress theme. :)
+8. **Defina a Página Inicial do Site**
+   Vá em `Configurações > Leitura` e em "Sua página inicial exibe", selecione **Uma página estática**. Escolha a página criada como "Página inicial".
 
-Good luck!
+9. **Preencha os Campos ACF**
+   Edite a página e preencha os campos personalizados de cada seção com os conteúdos desejados.
+
+## 📝 Notas e Considerações
+
+- **Formulário de Contato:** Controlado via JavaScript (`script.js`). Atualmente, não envia e-mails. Exibe uma mensagem de sucesso e limpa os campos. Para envio real, será necessário integrar um backend ou API de e-mail.
+- **Paginação de Cards:** Feita com JavaScript puro e adaptável ao tamanho da tela. Não possui animações de transição.
+- **Estilização:** Utiliza Tailwind CSS para todos os estilos. O `style.css` é mínimo.
+
+## 📞 Contato
+
+Para dúvidas ou mais informações, entre em contato:
+
+- **Nome:** Winicius Neves  
+- **Email:** [winiciusneves2004@hotmail.com](mailto:winiciusneves2004@hotmail.com)  
+- **LinkedIn:** [linkedin.com/in/winicius-neves](https://www.linkedin.com/in/winicius-neves-4b9257268/)
