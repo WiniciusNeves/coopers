@@ -1,71 +1,87 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const cardsContainer = document.getElementById('cards-container');
-    const cards = Array.from(cardsContainer.getElementsByClassName('good-thing-card'));
-    const paginationDotsContainer = document.getElementById('pagination-dots');
-    
-    let currentPage = 0;
-    const cardsPerPage = 3; // Mostrar 3 cards por vez
+document.addEventListener('DOMContentLoaded', function () {
+  const slider = document.getElementById('cards-slider');
+  const cards = Array.from(slider.getElementsByClassName('good-thing-card'));
+  const paginationDotsContainer = document.getElementById('pagination-dots');
 
-    // Calcula o número total de páginas baseado no número de cards e cards por página
-    const totalPages = Math.ceil(cards.length / cardsPerPage);
+  let currentPage = 0;
+  const cardsPerPage = 3;
+  let totalPages = Math.ceil(cards.length / cardsPerPage);
+  const dots = [];
 
-    // Array para armazenar as referências das bolinhas de paginação
-    const dots = [];
+  function isMobileLayout() {
+    return window.innerWidth < 768; // Tailwind md breakpoint
+  }
 
-    // Ajusta o número de bolinhas de paginação dinamicamente
-    paginationDotsContainer.innerHTML = ''; // Limpa as bolinhas existentes
-    for (let i = 0; i < totalPages; i++) {
-        const dot = document.createElement('span');
-        dot.classList.add('pagination-dot', 'w-10', 'h-10', 'rounded-full', 'bg-gray-300', 'cursor-pointer');
-        dot.dataset.page = i;
-        paginationDotsContainer.appendChild(dot);
-        dots.push(dot); // Adiciona ao array de dots
-    }
+  function setupMobileLayout() {
+    // Remove transform e mostra todos os cards em coluna
+    slider.style.transform = 'translateX(0)';
+    slider.style.transition = 'none';
+    slider.style.flexWrap = 'wrap';
 
-    // Função para mostrar os cards da página atual e esconder os outros
-    function showCards(page) {
-        // Garante que a página não seja menor que 0 ou maior que o total de páginas
-        if (page < 0) {
-            currentPage = 0;
-        } else if (page >= totalPages) {
-            currentPage = totalPages - 1;
-        } else {
-            currentPage = page;
-        }
-        
-        cards.forEach((card, index) => {
-            const start = currentPage * cardsPerPage;
-            const end = start + cardsPerPage;
-            if (index >= start && index < end) {
-                card.classList.remove('hidden'); // Mostra o card
-            } else {
-                card.classList.add('hidden'); // Esconde o card
-            }
-        });
-        updatePaginationDots(); // Atualiza a bolinha ativa
-    }
-
-    // Função para atualizar o estilo da bolinha de paginação ativa
-    function updatePaginationDots() {
-        dots.forEach((dot, index) => {
-            if (index === currentPage) {
-                dot.classList.remove('bg-gray-300');
-                dot.classList.add('bg-[#56c870]'); // Cor ativa (verde)
-            } else {
-                dot.classList.remove('bg-[#56c870]');
-                dot.classList.add('bg-gray-300'); // Cor inativa (cinza)
-            }
-        });
-    }
-
-    // Adiciona event listeners para as bolinhas de paginação
-    paginationDotsContainer.addEventListener('click', function(event) {
-        if (event.target.classList.contains('pagination-dot')) {
-            const pageToGo = parseInt(event.target.dataset.page);
-            showCards(pageToGo);
-        }
+    cards.forEach(card => {
+      card.style.display = 'block';
     });
 
-    // Mostra os cards da primeira página ao carregar
-    showCards(0);
+    // Oculta bolinhas
+    paginationDotsContainer.style.display = 'none';
+  }
+
+  function setupDesktopLayout() {
+    totalPages = Math.ceil(cards.length / cardsPerPage);
+
+    // Reset styles
+    slider.style.transition = 'transform 0.5s ease-in-out';
+    slider.style.flexWrap = 'nowrap';
+
+    // Cria as bolinhas
+    paginationDotsContainer.innerHTML = '';
+    paginationDotsContainer.style.display = 'flex';
+
+    for (let i = 0; i < totalPages; i++) {
+      const dot = document.createElement('span');
+      dot.classList.add('pagination-dot', 'w-10', 'h-10', 'rounded-full', 'bg-gray-300', 'cursor-pointer', 'inline-block');
+      dot.dataset.page = i;
+      paginationDotsContainer.appendChild(dot);
+      dots.push(dot);
+    }
+
+    showPage(currentPage);
+
+    // Clique nas bolinhas
+    paginationDotsContainer.addEventListener('click', function (event) {
+      if (event.target.classList.contains('pagination-dot')) {
+        const pageToGo = parseInt(event.target.dataset.page);
+        showPage(pageToGo);
+      }
+    });
+  }
+
+  function showPage(page) {
+    if (isMobileLayout()) return; // Ignora paginação no mobile
+
+    currentPage = Math.max(0, Math.min(page, totalPages - 1));
+    const offset = currentPage * 100;
+    slider.style.transform = `translateX(-${offset}%)`;
+    updatePaginationDots();
+  }
+
+  function updatePaginationDots() {
+    dots.forEach((dot, index) => {
+      dot.classList.toggle('bg-[#56c870]', index === currentPage);
+      dot.classList.toggle('bg-gray-300', index !== currentPage);
+    });
+  }
+
+  function handleLayout() {
+    if (isMobileLayout()) {
+      setupMobileLayout();
+    } else {
+      setupDesktopLayout();
+    }
+  }
+
+  // Inicialização
+  handleLayout();
+  window.addEventListener('resize', handleLayout);
 });
+

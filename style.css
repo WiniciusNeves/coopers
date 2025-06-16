@@ -20,7 +20,6 @@ a {
     color: inherit;
 }
 
-/* IMPORTANTE: REMOVIDOS body::before e body::after. Eles estavam causando o fundo branco extra e duplicação de fundos. */
 
 /* Estilos personalizados para os ícones de check/cross */
 .icon-check::before {
