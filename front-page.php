@@ -213,8 +213,8 @@
         <?php endif; ?>
 
         <!-- Wrapper com overflow -->
-        <div class="overflow-hidden relative px-4 mt-[-20px]">
-          <div id="cards-slider" class="flex transition-transform duration-500 ease-in-out">
+        <div class="overflow-hidden relative px-4 mt-[-20px] flex flex-col md:flex-row">
+          <div id="cards-slider" class="flex transition-transform duration-500 ease-in-out flex-1">
             <?php
             // Changed to check if good_things_cards repeater exists and is not empty within the good_things_section group
             if (isset($good_things_section['good_things_cards']) && is_array($good_things_section['good_things_cards']) && !empty($good_things_section['good_things_cards'])) :
